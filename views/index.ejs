@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron centered">
+  <div class="container">
+    <i class="fas fa-key fa-6x"></i>
+    <h1 class="display-3">Hi <%= name %></h1>
+    <p class="lead">Welcome to PERSIAN EDUCATION APP</p>
+    <hr />
+    <a class="btn btn-outline-primary" href="/exercise" role="button">
+      Go to page 1
+    </a>
+    <a class="btn btn-outline-primary" href="/question" role="button">
+      Go to page 2
+    </a>
+    <br /><br />
+    <form action="/logout" method="POST">
+      <button class="btn btn-dark btn-lg" type="submit">Log Out</button>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
